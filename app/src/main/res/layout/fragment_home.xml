@@ -1,0 +1,355 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    >
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="20sp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:id="@+id/gridView"
+        app:layout_constraintBottom_toTopOf="@id/spaceBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="5sp">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/apple" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:text="Apple"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="$9.99"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="5sp">
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/orange" />
+
+            <TextView
+                android:id="@+id/textViewName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:text="Orange"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="$9.99"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="5sp">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banana" />
+
+            <TextView
+                android:id="@+id/textViewName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:text="Banana"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="$9.99"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="5sp">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/strawberry" />
+
+            <TextView
+                android:id="@+id/textViewName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:text="Strawberry"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewPrice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="$9.99"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="5sp">
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blueberry" />
+
+            <TextView
+                android:id="@+id/textViewName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:text="Blueberry"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewPrice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="$9.99"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="5sp">
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/raspberries" />
+
+            <TextView
+                android:id="@+id/textViewName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:text="Raspberry"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewPrice6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="$9.99"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="5sp">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pears" />
+
+            <TextView
+                android:id="@+id/textViewName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:text="Pear"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewPrice7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="$9.99"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="5sp">
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/grape" />
+
+            <TextView
+                android:id="@+id/textViewName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:text="Grape"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewPrice8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="$9.99"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:padding="5sp">
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blackberry" />
+
+            <TextView
+                android:id="@+id/textViewName9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:text="Blackberry"
+                android:textColor="#FFFFFF"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textViewPrice9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="$9.99"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:padding="4dp"
+                tools:ignore="HardcodedText" />
+
+        </FrameLayout>
+
+    </GridLayout>
+    <Space
+        android:id="@+id/spaceBottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
